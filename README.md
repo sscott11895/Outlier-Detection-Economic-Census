@@ -34,15 +34,30 @@ Ultimately, I used the mathematics in this paper to determine outliers in my fin
 ## Solution
 The Tableau dashboard I created utilized a geographic-centered approach. When analysts opened their trade-specific Tableau file, 
 they immediately saw a map of the United States with relevant North American Industry Classification System (NAICS) code filters and important ratios.
-As they click through the different combinations of these inputs, U.S. states would changes color based on whether or not the underlying mathematical method (applied to the data during the preprocessing step)
-determined it to be on outlier. 
+As they click through the different combinations of these inputs, U.S. states would changes color based on whether or not the underlying mathematical method 
+(applied to the data during the preprocessing step) determined it to be on outlier. Analysts could then click on the state in question and either see
+the data as a scatter plot, with key outlier businesses highlighted. This would prompt the analyst to review these outlier businesses to determine
+if this was the result of data-entry error or if it was a true outlier. Alternatively, analysts could click on the state in question and drill down
+to the county level, where counties that were trending differently than other counties in the state would be highlighted. From there, analysts could
+go to the scatter plot view to review individual businesses. The image below shows this process. 
 
-![State Demo]()
+![State Demo](https://github.com/sscott11895/Outlier-Detection-Economic-Census/blob/main/Images/Workflow_1.png)
+
+
+In addition to the geographic maps and scatter plots, analysts could also quickly review statistics on a given business. 
+In the image below, table rows represent one business, and the blue and red squares indicate for what metrics the business was an outlier 
+(i.e., annual payroll-number of employee ratio, operating expenses-revenues ratio).
+From here, analysts could scroll over any of the colored boxes and existing comments would pop up. 
+This would allow analysts to quickly see if another team member had already addressed this outlier at an earlier stage in the process, thus 
+avoiding duplication of work. 
+
+
+![State Demo](https://github.com/sscott11895/Outlier-Detection-Economic-Census/blob/main/Images/Workflow_2.png)
 
 
 
-
-See code for [functions]() used and example code of how I [cleaned the trade-specific data]() prior to loading the information into Tableau. 
+See code for [functions](https://github.com/sscott11895/Outlier-Detection-Economic-Census/blob/main/functions.py) used and example [code](https://github.com/sscott11895/Outlier-Detection-Economic-Census/blob/main/prep_manufacturing_data.py) 
+of how I cleaned the trade-specific data prior to loading the information into Tableau. 
 
 
 At the end of my internship, I had completed an interactive Tableau dashboard that used both geographic visuals 
