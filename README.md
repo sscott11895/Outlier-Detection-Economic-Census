@@ -6,14 +6,31 @@ Economy-Wide Statistics Division. I was placed with this team through the [Civic
 an organization that places early-career data analysts, data scientists, and product managers with federal 
 government agencies to support innovation and design. My work was focused on researching 
 and creating a proof of concept of an outlier identification tool in the 
-form of a Tableau dashboard. 
+form of a Tableau dashboard. See [here](https://github.com/sscott11895/Outlier-Detection-Economic-Census/blob/main/Outlier_Detection_Presentation.pdf) 
+to view my final project presentation slides. 
+
+## Background and The Problem
+The Economic Census is deployed every 5 years to assess the health and wealth of U.S. economy. All U.S. businesses
+are asked to fill out information on metrics such as annual payroll, number of employees, total sales and receipts, etc. 
+Once these questionnaires are filled out and returned, multiple teams at Census begin the task of cleaning and analyzing the data.
+When I arrived at the Census, I met with multiple trade teams, like Manufacturing and Wholesale, who shared with me their process for 
+reviewing responses with the hopes of finding, correcting, and potentially removing, outliers.
+I immediately noticed that while all teams had access to a preexisting outlier detection tool developed in 2010, 
+nearly all teams had abandoned this tool due to negative user experiences with the interface. Furthermore, the tool led to a 
+high rate of duplication, where once an analyst reviewed and corrected a particular number, the software would often 
+re-highlight the same figure and prompt a second unnecessary review. As a result, all teams were using different approaches 
+when performing outlier review.
+
+## Process
+Early on in the summer, I did focus groups with 5 trade teams where they demoed their tools and 
+explained their existing painpoints. Their chief complaints centered around the lack of a strong visual that could
+help analysts immediately pinpoint the worst-of-the-worst outliers. During this time, I also met with upper-level
+management who were focused on conducting a sub-state review of outliers. 
 
 
-
-
-
-
-
+## Solution
+At the end of my internship, I had completed an interactive Tableau dashboard that used both geographic visuals 
+as well as easy-to-digest scatter plots and tables 
 
 My work this summer has served as the basis of a new outlier review process and aims to 
 support over 150 analysts in correcting data from the 2022 Economic Census in preparation for the 
@@ -23,48 +40,4 @@ Geographic Area Series publication.
 
 
 
-My specific focus was 
 
-
-My 
-The Civic Digital Fellowship is empowering the next generation of technology leaders to innovate at the intersections of technology and public service in federal government offices across the United States. Fellows work across software engineering, data, design, and product management to deliver policy, improve systems, and strengthen products on behalf of the American people.
-
-
-
-
-
-tives. 
-One popular, and at times controversial, initiative was the introduction of e-scooters
-in various neighborhoods around Chicago. While this new mode of transportation offers 
-commuters and tourists an alternative to gas-powered vehicles, concerns around sidewalk
-clutter are often sources of debate. 
-
-
-Chicago piloted an E-Scooter program in 2020 to test how city residents would
-respond to this new mode of transportation. The city’s full report can be found [here](https://www.chicago.gov/content/dam/city/depts/cdot/Misc/EScooters/2021/2020%20Chicago%20E-scooter%20Evaluation%20-%20Final.pdf).
-
-The goal of my analysis is to look at the origin and end points of scooter rides.
-Where were these novel wheels popular and where did they sit growing dust and 
-rust on the sidewalk? I am using the raw data provided on the City of Chicago website, 
-which can be found [here](https://data.cityofchicago.org/Transportation/E-Scooter-Trips-2020/3rse-fbp6).
-
-
-# Contents
-
-The R Markdown is included in this repo with various plots and maps that supported 
-my analysis (see here for full report). During the data manipulation and processing phase, I used geolocation data 
-to review trip duration, trip distance, origin communities, and destination communities.  
-
-I then used a brief time-series analysis to see the number of trips taken over time. 
-From mid-August to early September, we can see that residents quickly learned 
-of the program and began utilizing the scooters. The number of rides generally 
-decreases over time which is congruent with the expected drop in temperatures as 
-the weather changes throughout the fall.
-
-Finally, I used maps to visualize communities where e-scooters were very popular based on 
-ridership. After looking at this data, it is clear that scooters were well utilized
-in neighborhoods in the north of Chicago. While more data is needed to understand why 
-people in southern neighborhoods might not choose to travel by bike, one conjecture we 
-could make is that people in northern Chicago might live and work within a two block radius. 
-In contrast, people in southern Chicago might travel farther to get to work and therefore 
-traveling by scooter is a less attractive option.
