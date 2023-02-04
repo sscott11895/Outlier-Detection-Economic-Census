@@ -25,14 +25,28 @@ when performing outlier review.
 Early on in the summer, I did focus groups with 5 trade teams where they demoed their tools and 
 explained their existing painpoints. Their chief complaints centered around the lack of a strong visual that could
 help analysts immediately pinpoint the worst-of-the-worst outliers. During this time, I also met with upper-level
-management who were focused on conducting a sub-state review of outliers. 
+management who emphasized they wanted a tool that allowed trade teams to focus on conducting sub-state reviews of outliers,
+specifically county-level review. As I was developing a python script as well as a Tableau dashboard, I used a [work paper](http://www.asasrms.org/Proceedings/y2013/files/309457_82715.pdf) 
+analyzing how the modified Hidiroglou-Berthelot (HB) edit has been used for outlier detection in previous Census outlier identification tools. 
+Ultimately, I used the mathematics in this paper to determine outliers in my final tool. 
 
 
 ## Solution
-At the end of my internship, I had completed an interactive Tableau dashboard that used both geographic visuals 
-as well as easy-to-digest scatter plots and tables 
+The Tableau dashboard I created utilized a geographic-centered approach. When analysts opened their trade-specific Tableau file, 
+they immediately saw a map of the United States with relevant North American Industry Classification System (NAICS) code filters and important ratios.
+As they click through the different combinations of these inputs, U.S. states would changes color based on whether or not the underlying mathematical method (applied to the data during the preprocessing step)
+determined it to be on outlier. 
 
-My work this summer has served as the basis of a new outlier review process and aims to 
+![State Demo]()
+
+
+
+
+See code for [functions]() used and example code of how I [cleaned the trade-specific data]() prior to loading the information into Tableau. 
+
+
+At the end of my internship, I had completed an interactive Tableau dashboard that used both geographic visuals 
+as well as easy-to-digest scatter plots and tables. My work this summer has served as the basis of a new outlier review process and aims to 
 support over 150 analysts in correcting data from the 2022 Economic Census in preparation for the 
 Geographic Area Series publication. 
 
